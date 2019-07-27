@@ -7,4 +7,6 @@ public interface IDriveMode {
     double getHowMuchGasReleasedToIncrease();
 
     double getHowMuchEngineWearToIncrease();
+
+    double getHowMuchBreaksWearToIncrease();
 }

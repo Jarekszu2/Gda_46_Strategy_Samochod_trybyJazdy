@@ -1,5 +1,8 @@
 package com.sda.dp.strategy.cars;
 
+import lombok.Data;
+
+@Data
 public class Car {
     private int speed;
     private double gasReleased; //
@@ -23,7 +26,8 @@ public class Car {
     }
 
     public void decreaseSpeed(){
-
+        speed -= mode.getHowMuchSpeedToIncrease();
+        breaksWear += mode.getHowMuchBreaksWearToIncrease();
     }
 
     public void setMode(IDriveMode mode) {

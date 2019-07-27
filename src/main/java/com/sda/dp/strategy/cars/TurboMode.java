@@ -12,4 +12,8 @@ public class TurboMode implements IDriveMode {
     public double getHowMuchEngineWearToIncrease() {
         return 0.1;
     }
+
+    public double getHowMuchBreaksWearToIncrease() {
+        return 0.01;
+    }
 }
